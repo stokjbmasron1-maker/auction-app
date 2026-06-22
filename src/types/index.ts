@@ -22,7 +22,7 @@ export interface AuctionItem {
   image_url: string | null;
   seller_id: string;
   end_time: string;
-  status: 'active' | 'completed' | 'cancelled';
+  status: 'active' | 'completed' | 'cancelled' | 'claimed';
   created_at: string;
   seller_profile?: Profile;
   highest_bid?: number;

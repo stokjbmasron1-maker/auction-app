@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements, CardElement, AddressElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import { motion } from 'framer-motion';
-import { X, CreditCard, CheckCircle2, Loader2, Save } from 'lucide-react';
+import { X, CreditCard, Loader2, Save } from 'lucide-react';
 import { useCurrency } from '../context/CurrencyContext';
 import type { Profile } from '../types';
 

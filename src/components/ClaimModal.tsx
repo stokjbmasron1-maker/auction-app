@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { X, MapPin, Truck, CheckCircle2 } from 'lucide-react';
+import { X, Truck, CheckCircle2 } from 'lucide-react';
 import type { Profile, AuctionItem } from '../types';
 import { auctionService } from '../services/auctionService';
 

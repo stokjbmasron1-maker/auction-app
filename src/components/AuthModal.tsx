@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { X, Mail, Lock, User, AtSign, Loader, Eye, EyeOff } from 'lucide-react';
 import { auctionService } from '../services/auctionService';
 

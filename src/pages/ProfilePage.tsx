@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { User, Package, Settings, X, UploadCloud, AtSign, CheckCircle2, History, Hammer, ArrowUpRight, Wallet, CreditCard } from 'lucide-react';
+import { User, Package, Settings, X, UploadCloud, AtSign, CheckCircle2, History, ArrowUpRight, Wallet } from 'lucide-react';
 import { auctionService } from '../services/auctionService';
 import type { Profile, AuctionItem } from '../types';
 import { useCurrency } from '../context/CurrencyContext';
@@ -18,9 +18,8 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({ currentUser }) => {
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<'items' | 'bids'>('items');
   const [selectedItemId, setSelectedItemId] = useState<string | null>(null);
-  const { formatPrice, currencyInfo } = useCurrency();
+  const { formatPrice } = useCurrency();
 
-  // Settings state
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [editName, setEditName] = useState('');
   const [editUsername, setEditUsername] = useState('');

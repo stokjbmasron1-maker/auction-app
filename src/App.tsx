@@ -28,8 +28,8 @@ function App() {
     };
     loadUser();
 
-    // Listen to real Supabase auth changes for perfect sync
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
+    if (!supabase) return;
+    const { data: { subscription } } = supabase.auth.onAuthStateChange(async (_event, session) => {
       if (session?.user) {
          const user = await auctionService.getCurrentUser();
          setCurrentUser(user);

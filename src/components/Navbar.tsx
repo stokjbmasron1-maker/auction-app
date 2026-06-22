@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Hammer, LogOut, ChevronDown, PlusCircle, Search, User, Wallet } from 'lucide-react';
+import { Hammer, LogOut, ChevronDown, User, Wallet } from 'lucide-react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { auctionService } from '../services/auctionService';
 import type { Profile } from '../types';
